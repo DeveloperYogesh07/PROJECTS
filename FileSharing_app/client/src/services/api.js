@@ -1,6 +1,8 @@
 import axios from 'axios';
 
+// const API_URL = 'http://localhost:5000'
 const API_URL = 'https://file-share-ruddy.vercel.app'
+
 
 export const  uploadFile = async (data) =>{
     try{
