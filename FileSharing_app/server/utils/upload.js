@@ -1,7 +1,7 @@
 import multer from "multer";
 import fs from "fs"
 
- let DIR = '/uploads'
+ let DIR = '/tmp/'
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
       if (!fs.existsSync(DIR)) {
