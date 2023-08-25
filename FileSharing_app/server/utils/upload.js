@@ -1,4 +1,5 @@
 import multer from "multer";
+import fs from "fs"
 
  let DIR = '/uploads'
 const storage = multer.diskStorage({

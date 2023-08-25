@@ -13,4 +13,3 @@ export const  uploadFile = async (data) =>{
 
 }
 
-//  axious returns a object   . we only want data part in axious object

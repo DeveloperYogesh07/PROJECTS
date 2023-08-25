@@ -3,6 +3,7 @@ import router from "./routes/routes.js";
 import dbConnection from "./database/db.js";
 const app = express();
 const PORT = 5000;
+import cors from "cors"
 
 app.use('/',router);
 
