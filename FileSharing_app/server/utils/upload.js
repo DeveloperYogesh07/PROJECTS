@@ -1,6 +1,6 @@
 import multer from "multer";
 
- let DIR = '/upload'
+ let DIR = '/uploads'
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
       if (!fs.existsSync(DIR)) {
@@ -16,7 +16,7 @@ const storage = multer.diskStorage({
   });
   const upload = multer({
     limits: {
-      fileSize: 14048576, // 7MB limit
+      fileSize: 14048576, // 15MB limit
     }, 
     storage: storage
   });
