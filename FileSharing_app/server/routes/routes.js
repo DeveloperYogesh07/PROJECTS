@@ -4,7 +4,7 @@ import upload from "../utils/upload.js";
 
 const router = express.Router();
 
-
+router.get('/health', (req, res)=> res.status(200).json('SErver is up and running!'));
 router.post('/upload',upload.single('file'),uploadImage);
 router.get('/file/:fileId',downloadImage)
 
