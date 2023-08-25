@@ -22,6 +22,7 @@ const getImage = async() =>{
     data.append("file",fileInput);
 
     let response = await uploadFile(data);
+    console.log("response",response);
     setResult(response.path);
 
    }
