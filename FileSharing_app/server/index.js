@@ -6,6 +6,13 @@ const PORT = 5000;
 
 app.use('/',router);
 
+app.use(cors(
+  {
+    origin:["https://file-share-1whq.vercel.app"],
+    methods:["POST","GET"],
+    credentials:true
+  }
+))
 
 dbConnection();
 app.listen(PORT,()=>{
