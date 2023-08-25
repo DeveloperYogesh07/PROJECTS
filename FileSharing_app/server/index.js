@@ -8,7 +8,7 @@ app.use('/',router);
 
 app.use(cors(
   {
-    origin:["https://projects-frontend-chi.vercel.app/"],
+    origin:["https://projects-frontend-chi.vercel.app"],
     methods:["POST","GET"],
     credentials:true
   }
